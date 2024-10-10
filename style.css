@@ -60,8 +60,10 @@ a{
 
 }
 h1{
+    width: 400px;
     position: relative;
-    top: 25%;
+    margin: auto;
+    top: 30%;
 }
 a:hover{
     transform: translateY(-3px);
@@ -71,12 +73,25 @@ a:hover{
 
 /* This media query is used to grade calculator */
 @media (max-width:760px) {
-    .calculater,.week,.age,.mul,.root{
+    .calculater,.week,.age,.mul{
         width: 90%;
         margin: auto;
     }
-    .root a{
-        width: 180px;
-        padding: 20px;
+
+    .root{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        position: relative;
+        top: 250px; 
+        text-align: center;
+        
+    }
+    h1{
+        width: 90%;
+        position: relative;
+        margin: auto;
+        top: 30%;
     }
 }
