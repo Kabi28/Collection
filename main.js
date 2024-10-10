@@ -76,7 +76,7 @@ function multiply(){
     var num = parseFloat(document.getElementById('input').value.trim());
     document.getElementById('result').innerHTML = "";
   
-    if (num > 10 || num <= 0){
+    if (num > 10 || num <= 0 || isNaN(num) ){
         document.getElementById('result').innerHTML = "Please Enter Value Between 1-10:";
     }
     else{
